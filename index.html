@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional portfolio website for [Your Name]">
-    <title>Portfolio - [Your Name]</title>
+    <meta name="description" content="Professional portfolio website for John Chola">
+    <title>Portfolio - John Chola</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -24,6 +24,7 @@
 
     <!-- Navigation -->
     <header class="header">
+        
         <nav class="nav">
             <!-- TODO: Create navigation with links to each section
                  Requirements:
@@ -33,8 +34,10 @@
                  - Active state indication
             -->
             <div class="nav__logo">
-                <a href="#home">[Your Name]</a>
+                <a href="#home">John Chola</a>
             </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">Dark-mode</button>
+
             <ul class="nav__menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -55,12 +58,12 @@
                  - Consider using Flexbox for layout
             -->
             <div class="hero__content">
-                <h1>Your Name</h1>
+                <h1>John Chola</h1>
                 <p class="hero__tagline">
                     <!-- TODO: Add your professional tagline -->
-                    Web Developer | Designer | Problem Solver
+                    Aspiring Software Engineer | Web Developer | Creative Problem Solver
                 </p>
-                <a href="#contact" class="btn btn--primary">Get In Touch</a>
+                <a href="#contact" class="btn btn--primary">Let's work together</a>
             </div>
         </section>
 
@@ -79,7 +82,7 @@
                 <div class="about__content">
                     <div class="about__image">
                         <!-- TODO: Add your profile image -->
-                        <img src="images/profile-placeholder.jpg" alt="Profile photo of [Your Name]">
+                        <img src="images/profile-picture.jpg" alt="Profile photo of John Chola">
                     </div>
                     <div class="about__text">
                         <p>
@@ -90,17 +93,42 @@
                                  - Your goals
                                  - What makes you unique
                             -->
-                            [Your professional bio goes here. Write at least 150 words about yourself,
-                            your background, your passion for web development, and your goals.
-                            This is your opportunity to introduce yourself to potential employers or clients.]
+                            
+                            I am a passionate Computer Science student with a strong interest in software engineering,
+                            web development, and building solutions that solve real-world problems.Based in Lusaka, Zambia, my journey in
+                            technology started with curiosity about how websites and applications work behind the scenes.
+                            Over time, I developed skills in HTML5, CSS3, JavaScript, and modern development principles
+                            such as responsive design and clean architecture.
+                        </p>
+
+                        <p>   
+                            I enjoy transforming ideas into functional and user-friendly digital experiences.
+                            I believe that good software is not just about code, but about usability, performance,
+                            accessibility, and maintainability. My goal is to grow into a professional software
+                            engineer who builds scalable systems and contributes to innovative projects that make
+                            a positive impact in society.
+                        </p>
+
+
+                        <p>  
+                            When I am not coding, you will find me contributing to open-source projects, mentoring 
+                            aspiring developers through local tech communities, or exploring Zambia's beautiful 
+                            landscapes. I am particularly passionate about using technology to solve local challenges 
+                            and make the web more accessible to everyone.
                         </p>
                         <h3>Skills</h3>
                         <ul class="skills-list">
                             <!-- TODO: Add your skills -->
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
+                            
+                            <li>HTML5 and  Semantic Markup</li>
+                            <li>CSS3 and Modern Layouts</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React and  Vue.js</li>
+                            <li>Node.js and Express</li>
                             <li>Responsive Design</li>
+                            <li>UI/UX Principles</li>
+                            <li>Git & Version Control</li>
+                            <li>Problem solving</li>
                             <!-- Add more skills -->
                         </ul>
                     </div>
@@ -123,12 +151,13 @@
                     <!-- Project Card 1 -->
                     <article class="project-card">
                         <!-- TODO: Replace with your project -->
-                        <img src="images/project1-placeholder.jpg" alt="Screenshot of Project 1">
+                        <img src="images/project1.jpg" alt="E-Commerce Platform dashboard showing product listings">
                         <div class="project-card__content">
-                            <h3>Project Title 1</h3>
+                            <h3>AfriMarket E-Commerce</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A full-featured e-commerce platform connecting local artisans with customers across Zambia. 
+                                Built with React, Node.js, and MongoDB. Features include real-time inventory, secure payments, 
+                                and mobile-responsive design.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -136,16 +165,18 @@
                             </div>
                         </div>
                     </article>
+                    
 
                     <!-- Project Card 2 -->
                     <article class="project-card">
                         <!-- TODO: Replace with your project -->
-                        <img src="images/project2-placeholder.jpg" alt="Screenshot of Project 2">
+                        <img src="images/project2.jpg" alt="Weather App interface showing forecast for Lusaka">
                         <div class="project-card__content">
-                            <h3>Project Title 2</h3>
+                            <h3>Zambia Weather Hub</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A real-time weather application providing accurate forecasts for all 10 provinces of Zambia. 
+                                Uses OpenWeatherMap API, features interactive maps, and provides farming advice based on 
+                                weather patterns.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -153,16 +184,16 @@
                             </div>
                         </div>
                     </article>
-
+                        
                     <!-- Project Card 3 -->
                     <article class="project-card">
                         <!-- TODO: Replace with your project -->
-                        <img src="images/project3-placeholder.jpg" alt="Screenshot of Project 3">
+                        <img src="images/project3.jpg" alt="TaskFlow dashboard showing project management interface">
                         <div class="project-card__content">
-                            <h3>Project Title 3</h3>
+                            <h3>TaskFlow Pro</h3>
                             <p>
-                                Brief description of your project. What technologies did you use?
-                                What problem does it solve?
+                                A collaborative task management tool designed for remote teams. Features include real-time 
+                                updates, file sharing, and team messaging. Built with Vue.js, Firebase, and Tailwind CSS.
                             </p>
                             <div class="project-card__links">
                                 <a href="#" class="btn btn--small">Live Demo</a>
@@ -172,6 +203,20 @@
                     </article>
 
                     <!-- TODO: Add more project cards if desired -->
+                    <article class="project-card">
+                        <img src="images/project4.jpg" alt="Portfolio template website showcase">
+                        <div class="project-card__content">
+                            <h3>DevPortfolio Templates</h3>
+                            <p>
+                                A collection of free, open-source portfolio templates for developers. Each template is 
+                                fully responsive, customizable, and follows best practices for performance and accessibility.
+                            </p>
+                            <div class="project-card__links">
+                                <a href="#" class="btn btn--small">Live Demo</a>
+                                <a href="#" class="btn btn--small btn--outline">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -189,54 +234,66 @@
                  - All inputs must have associated labels
                  - Use HTML5 validation attributes
             -->
-            <div class="container">
-                <h2>Contact Me</h2>
-                <form class="contact__form" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                            placeholder="Your Name"
-                            minlength="2"
-                        >
+                <div class="container">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="contact__content">
+                        <div class="contact__info">
+                            <h3>Get in Touch</h3>
+                            <p>I am always interested in hearing about new opportunities, collaborations, or just having a chat about web development. Feel free to reach out!</p>
+                            <div class="contact__details">
+                                <p>Lusaka, Zambia</p>
+                                <p>jchola608@gmail.com</p>
+                                <p>+260 770824729</p>
+                            </div>
+                        </div>
+                        <form class="contact__form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                    placeholder="John Mulenga"
+                                    minlength="2"
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                    placeholder="john@example.com"
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="What would you like to discuss?"
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    required
+                                    rows="5"
+                                    placeholder="Tell me about your project or idea..."
+                                    minlength="10"
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                            placeholder="your.email@example.com"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            placeholder="What is this regarding?"
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            required
-                            rows="5"
-                            placeholder="Your message..."
-                            minlength="10"
-                        ></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary">Send Message</button>
-                </form>
-            </div>
-        </section>
+                </div>
+            </section>
+            
     </main>
 
     <!-- Footer -->
@@ -248,14 +305,18 @@
              - Back to top link (optional)
         -->
         <div class="container">
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2026 John Chola. All rights reserved.</p>
             <nav class="footer__social">
+              <ul>
                 <!-- TODO: Add your social media links -->
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="Twitter">Twitter</a>
+                <li><a href="#" aria-label="GitHub profile (placeholder)">https://github.com/john-chola</a></li>
+                <li><a href="#" aria-label="LinkedIn profile (placeholder)">https://www.linkedin.com/in/john-chola</a></li>
+                <li><a href="#" aria-label="Mastodon profile (placeholder)">https://www.facebook.com/john.chola.10888</a></li>
+              </ul>
             </nav>
+            <a href="#home" class="footer__back-to-top">Back to Top</a>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
